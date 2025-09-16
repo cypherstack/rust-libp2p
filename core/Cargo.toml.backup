@@ -1,5 +1,5 @@
 [package]
-name = "cs_mwc-libp2p-core"
+name = "mwc-libp2p-core"
 edition = "2018"
 description = "Core traits and structs of libp2p"
 version = "0.27.3"
@@ -43,9 +43,9 @@ ring = { version = "0.16.9", features = ["alloc", "std"], default-features = fal
 [dev-dependencies]
 async-std = { version = "1.6.2", features = ["attributes"] }
 criterion = "0.3"
-cs_mwc-libp2p-mplex = { path = "../muxers/mplex" }
-cs_mwc-libp2p-noise = { path = "../transports/noise" }
-cs_mwc-libp2p-tcp = { path = "../transports/tcp" }
+mwc-libp2p-mplex = { path = "../muxers/mplex" }
+mwc-libp2p-noise = { path = "../transports/noise" }
+mwc-libp2p-tcp = { path = "../transports/tcp" }
 multihash = { version = "0.13", default-features = false, features = ["arb"] }
 quickcheck = "0.9.0"
 wasm-timer = "0.2"

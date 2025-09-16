@@ -1,5 +1,5 @@
 [package]
-name = "cs_mwc-libp2p-swarm-derivee"
+name = "mwc-libp2p-swarm-derivee"
 edition = "2018"
 description = "Procedural macros of mwc-libp2p-core"
 version = "0.22.1"
@@ -17,4 +17,4 @@ syn = { version = "1.0.8", default-features = false, features = ["clone-impls", 
 quote = "1.0"
 
 [dev-dependencies]
-mwc-libp2p = { package = "cs_mwc-libp2p", path = "../" }
+mwc-libp2p = { path = "../" }

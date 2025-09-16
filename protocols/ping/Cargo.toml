@@ -1,5 +1,5 @@
 [package]
-name = "mwc-libp2p-ping"
+name = "cs_mwc-libp2p-ping"
 edition = "2018"
 description = "Ping protocol for libp2p"
 version = "0.27.1"
@@ -11,8 +11,8 @@ categories = ["network-programming", "asynchronous"]
 
 [dependencies]
 futures = "0.3.1"
-mwc-libp2p-core = { version = "0.27.3", path = "../../core" }
-mwc-libp2p-swarm = { version = "0.27.1", path = "../../swarm" }
+mwc-libp2p-core = { package = "cs_mwc-libp2p-core", version = "0.27.3", path = "../../core" }
+mwc-libp2p-swarm = { package = "cs_mwc-libp2p-swarm", version = "0.27.1", path = "../../swarm" }
 log = "0.4.1"
 rand = "0.7.2"
 void = "1.0"
@@ -20,8 +20,8 @@ wasm-timer = "0.2"
 
 [dev-dependencies]
 async-std = "1.6.2"
-mwc-libp2p-tcp = { path = "../../transports/tcp" }
-mwc-libp2p-noise = { path = "../../transports/noise" }
-mwc-libp2p-yamux = { path = "../../muxers/yamux" }
-mwc-libp2p-mplex = { path = "../../muxers/mplex" }
+mwc-libp2p-tcp = { package = "cs_mwc-libp2p-tcp", path = "../../transports/tcp" }
+mwc-libp2p-noise = { package = "cs_mwc-libp2p-noise", path = "../../transports/noise" }
+mwc-libp2p-yamux = { package = "cs_mwc-libp2p-yamux", path = "../../muxers/yamux" }
+mwc-libp2p-mplex = { package = "cs_mwc-libp2p-mplex", path = "../../muxers/mplex" }
 quickcheck = "0.9.0"

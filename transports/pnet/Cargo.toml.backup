@@ -1,8 +1,8 @@
 [package]
-name = "cs_mwc-libp2p-yamux"
+name = "mwc-libp2p-pnet"
 edition = "2018"
-description = "Yamux multiplexing protocol for libp2p"
-version = "0.30.2"
+description = "Private swarm support for libp2p"
+version = "0.20.1"
 authors = ["Parity Technologies <admin@parity.io>"]
 license = "MIT"
 repository = "https://github.com/mwcproject/rust-libp2p"
@@ -11,7 +11,11 @@ categories = ["network-programming", "asynchronous"]
 
 [dependencies]
 futures = "0.3.1"
-mwc-libp2p-core = { package = "cs_mwc-libp2p-core", version = "0.27.3", path = "../../core" }
-parking_lot = "0.11"
-thiserror = "1.0"
-yamux = "0.8.1"
+log = "0.4.8"
+salsa20 = "0.7"
+sha3 = "0.9"
+rand = "0.7"
+pin-project = "1.0.2"
+
+[dev-dependencies]
+quickcheck = "0.9.0"

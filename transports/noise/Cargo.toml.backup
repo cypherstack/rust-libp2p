@@ -1,5 +1,5 @@
 [package]
-name = "cs_mwc-libp2p-noise"
+name = "mwc-libp2p-noise"
 description = "Cryptographic handshake protocol using the noise framework."
 version = "0.29.2"
 authors = ["Parity Technologies <admin@parity.io>"]
@@ -12,7 +12,7 @@ bytes = "1"
 curve25519-dalek = "3.0.0"
 futures = "0.3.1"
 lazy_static = "1.2"
-mwc-libp2p-core = { package = "cs_mwc-libp2p-core", version = "0.27.3", path = "../../core" }
+mwc-libp2p-core = { version = "0.27.3", path = "../../core" }
 log = "0.4"
 prost = "0.7"
 rand = "0.8.5"
@@ -30,7 +30,7 @@ snow = { version = "0.9.5", features = ["default-resolver"], default-features = 
 [dev-dependencies]
 async-io = "1.2.0"
 env_logger = "0.8.1"
-mwc-libp2p-tcp = { package = "cs_mwc-libp2p-tcp", path = "../../transports/tcp" }
+mwc-libp2p-tcp = { path = "../../transports/tcp" }
 quickcheck = "0.9.0"
 sodiumoxide = "0.2.5"
 
